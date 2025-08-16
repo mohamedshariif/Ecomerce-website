@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1, 
+    "name": "Product 1",
+    "image": "watch-rolex.png",
+    "price": 320,
+    "rating": 4,
+    "description": "Power Meets Elegance - Rolex Watch is Here for you !"
+  },
+  {
+    "id": 2,
+    "image": "https://img.freepik.com/premium-vector/realistic-watch-clock-black-face-silver-red-arrow-white-number-with-fabric-strap-isolated-vector_33869-4744.jpg?ga=GA1.1.1860006992.1740675466&semt=ais_hybrid",
+    "name": "Product 2", 
+    "price": 450,
+     "description": "Classic diving watch with timeless design and outstanding durability."
+  },
+  {
+    "id": 3,
+    "image": "https://img.freepik.com/premium-photo/luxury-silver-man-watch_1218049-12246.jpg?ga=GA1.1.1860006992.1740675466&semt=ais_hybrid",
+    "name": "Product 3", 
+    "price": 280,
+    "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": 4,
+    "image": "https://img.freepik.com/premium-photo/watch_1218049-14907.jpg?ga=GA1.1.1860006992.1740675466&semt=ais_hybrid", 
+    "name": "Product 4", 
+    "price": 390,
+    "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": 5,
+    "image": "https://img.freepik.com/premium-psd/rolex-silver-belt-green-black-wrist-wach_1100418-266.jpg?ga=GA1.1.1860006992.1740675466&semt=ais_hybrid", 
+    "name": "Product 5", 
+    "price": 529,
+    "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": 6,
+    "image": "https://img.freepik.com/premium-vector/realistic-watch-clock-chronograph_33869-142.jpg?w=740", 
+    "name": "Product 6", 
+    "price": 519,
+    "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": 7,
+    "image": "https://img.freepik.com/premium-photo/two-black-white-modern-smart-watch-with-straps-white-background-3d-rendering_476612-18619.jpg?ga=GA1.1.738192529.1741303990&semt=ais_hybrid",
+    "name": "Product 7",
+    "price": 519,
+    "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": 8,
+    "image": "https://img.freepik.com/premium-psd/realistic-smart-watch-mockup_165789-534.jpg?w=740",
+    "name": "Product 8",
+    "price": 519,
+    "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": 9, 
+    "name": "Product 9",
+    "image": "watch-apple.png",
+    "price": 320,
+    "rating": 4,
+    "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": 10, 
+    "name": "Product 10",
+    "image": "watch.png",
+    "price": 320,
+    "rating": 4,
+    "description": "Classic diving watch with timeless design and outstanding durability."
+  }
+
+]

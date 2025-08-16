@@ -1,0 +1,27 @@
+.product-detail-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.product-detail-card img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.product-detail-card h1 {
+  font-size: 2rem;
+}
+
+.product-detail-card p {
+  margin: 1rem 0;
+}
+
+.product-detail-card button {
+  padding: 0.5rem 1rem;
+  background-color: #aa9e1b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

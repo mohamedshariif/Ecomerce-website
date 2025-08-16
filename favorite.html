@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="favorite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-btn" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+          <img src="images/raiz-logo.png" alt="logo" class="logo">
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="">Shop</a>
+          <a href="">About Us</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="last-nav">
+          <div class="favorite-icon">
+            <a href="favorite.html" class="fav-link"> 
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+          <div class="sign">
+            <!-- <i class="far fa-user"></i> -->
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="shopping-icon">
+            <a href="cart.html" class="cart-link">
+              <i class="fa-solid fa-cart-shopping">
+                <span id="cart-count">0</span>
+              </i>
+            </a>
+          </div>
+        </div>
+      </header>
+    <!-- <a href="index.html">← Continue Shopping</a> -->
+     <div class="title-search">
+         <h1 class="title">Favorites</h1>
+         <div class="favorite-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search In Favorites">
+         </div>
+     </div>
+    <div id="fav-items"></div>
+
+    <script src="favorite.js"></script>
+</body>
+</html>
