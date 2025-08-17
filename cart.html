@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Your Cart</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <style>
     .cart-container {
       max-width: 700px;
@@ -53,6 +55,41 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/raiz-logo.png" alt="logo" class="logo">
+      </a>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="">Shop</a>
+      <a href="">About Us</a>
+      <a href="">Contact Us</a>
+    </div>
+    <div class="last-nav">
+      <div class="favorite-icon">
+        <a href="favorite.html" class="fav-link"> 
+          <i class="fa-regular fa-heart"></i>
+        </a>
+      </div>
+      <div class="sign">
+        <!-- <i class="far fa-user"></i> -->
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="shopping-icon">
+        <a href="cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping">
+            <span id="cart-count">0</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </header>
+
   <div class="cart-container">
     <h2>Your Shopping Cart</h2>
     <div id="cart-items"></div>
@@ -61,6 +98,61 @@
       Total Price: $<span id="total-price">0.00</span>
     </div>
   </div>
+
+  <section class="real-footer">
+
+    <div class="footer">
+      <div class="left-footer">
+          <h1 class="footer-logo">RAIIZ.</h1>
+          <p>Raiiz is your trusted destination for premium watches. 
+            We offer timeless designs that blend elegance and durability, helping you find the perfect timepiece for any occasion.</p>
+      </div>
+      <div class="center-footer">
+        <h2 class="footer-title">Compony</h2>
+        <div class="company-list">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Privacy policy</li>
+        </div>
+      </div>
+      <div class="right-footer">
+        <h2 class="footer-title">Get help</h2>
+        <div class="footer-help">
+          <li>FAQ</li>
+          <li>Shipping</li>
+          <li>Returns</li>
+          <li>Order Status</li>
+          <li>Payment Option</li>
+        </div>
+      </div>
+      <div class="follow-footer">
+        <h2 class="footer-title">Follow Us</h2>
+        <div class="follow-icons">
+          <div class="follow-icons-div">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="follow-icons-div">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="follow-icons-div">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="follow-icons-div">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  <footer>
+    <div class="last-footer">
+      <p>© 2025 Raiiz. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</section>
 
   <script src="cart.js"></script>
 </body>

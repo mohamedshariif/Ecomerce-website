@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
       itemsContainer.scrollWidth
     ) {
       itemsContainer.scrollLeft +=
-        document.querySelector(".item").offsetWidth + 230;
+        document.querySelector(".item").offsetWidth + 200;
       updateButtons();
     }
   });
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
   prevBtn.addEventListener("click", () => {
     if (itemsContainer.scrollLeft > 0) {
       itemsContainer.scrollLeft -=
-        document.querySelector(".item").offsetWidth + 230;
+        document.querySelector(".item").offsetWidth + 200;
       updateButtons();
     }
   });

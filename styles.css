@@ -260,7 +260,7 @@ header{
 #items{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   overflow: hidden;
   scroll-behavior: smooth;
   white-space: nowrap;
@@ -407,7 +407,7 @@ header{
   position: relative;
   background: var(--secondary-color);
   color: #000;
-  padding: 10px 10px;
+  padding: 10px 0px;
   padding-left: 40px;
   border-radius: 5px;
   width: 100%;
@@ -567,7 +567,7 @@ header{
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  padding: 1% 6%;
+  padding-top: 1%;
   margin-top: 20px;
 }
 .subscribe-info{
@@ -607,49 +607,94 @@ header{
 }
 .footer{
   display: flex;
-  gap: 60px;
-  padding: 20px ;
+  gap: 20px;
+  padding: 50px 80px;
   margin-top: 50px;
+  background-color: #000;
 }
 .left-footer{
-  flex: 1.5;
-  padding-right: 8%;
-}
-.center-footer, .right-footer{
-  flex: 1;
-}
-.footer-head{
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.left-footer p,
-.center-footer p,
-.right-footer p {
-  color: #555;
-  margin-bottom: 10px;
+  flex: 2;
+  margin-right: 90px;
 }
 .footer-logo{
-  font-size: 24px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 15px;
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  margin-bottom: 20px;
 }
-.company-list li{
+.left-footer p{
+  color: #999;
+}
+.center-footer, .right-footer, .follow-footer{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.footer-title{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.footer-title::after{
+  content: '';
+  height: 2px;
+  width: 25%;
+  background-color: var(--accent-color);
+  display: block;
+  margin-top: 10px;
+}
+.company-list li,
+.footer-help li{
   list-style: none;
   margin-bottom: 10px;
   cursor: pointer;
-  color: #555;
+  color: #777;
   transition: all 0.3s;
 }
-.company-list li:hover{
-  color: #222;
+.company-list li:hover,
+.footer-help li:hover{
+  color: var(--accent-color);
 }
-
-.last-footer{
-  text-align: center;
-  border-top: 1px solid #ccc;
-  padding: 15px;
-  color: #222;
+.follow-icons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.follow-icons-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.follow-icons-div i{
+  color: #ffff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.follow-icons-div:hover{
+  background-color: #444;
+}
+.follow-icons-div:hover.follow-icons-div i{
+  color: var(--accent-color);
+}
+footer{
+  margin-top: 0;
+  border-top: 1px solid #555;
+  padding: 10px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p{
+  color: #aaa;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 600px) {
@@ -678,6 +723,8 @@ header{
   .logo{
     padding-top: 3px;
     width: 100px;
+    object-fit: cover;
+    object-position: center;
     flex: 1;
   }
   .favorite-icon, .sign, .shopping-icon{
@@ -693,8 +740,11 @@ header{
   .product-sec,
   .featured-sec, 
   .mid-sec, 
-  .footer-sec{
+  .subscribe-sec{
     padding: 5% 3%;
+  }
+  .sec-one{
+    height: calc(100vh - 200px);
   }
   .hero{
     display: flex;
@@ -726,6 +776,15 @@ header{
   .product-sec{
     height: auto;
     padding-bottom: 5%;
+  }
+  #items{
+    gap: 5px;
+  }
+  .item{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  }
+  .item:hover{
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
   }
   .featured-sec{
     padding: 2% 3%;
@@ -775,9 +834,13 @@ header{
     gap: 12px;
   }
   .footer{
-    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: start;
+    padding: 50px;
+    gap: 40px;
+  }
+  .left-footer{
+    width: 100%;
   }
 }
