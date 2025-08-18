@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      width: 200px;
+      border: 1px solid #ccc;
+    }
+    .question{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 10px;
+      height: 20px;
+    }
+    #plus-toggle{
+      cursor: pointer;
+    }
+    .answers p{
+      border-top: 1px solid #ccc;
+      padding: 5px 10px;
+      transition: transform 0.3s ease;
+    }
+    .hidden{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="question">
+      <p>how old are you?</p>
+      <span id="plus-toggle">
+        <i class="fa-solid fa-angle-up"></i>
+      </span>
+    </div>
+    <div class="answers hidden" id="answer-details">
+      <p>i am 20 years old</p>
+      <p>i am 50 years old</p>
+      <p>i am 20 years old</p>
+      <p>i am 10 years old</p>
+    </div>
+  </div>
+
+  <script>
+
+    const toggleBtn = document.getElementById("plus-toggle");
+    const answerDetails = document.getElementById("answer-details");
+
+    toggleBtn.addEventListener('click', () => {
+      answerDetails.classList.toggle("hidden");
+
+      const icon = toggleBtn.querySelector("i");
+      if(answerDetails.classList.contains("hidden")) {
+        icon.classList.remove("fa-angle-up");
+        icon.classList.add("fa-angle-down");
+      } else {
+        icon.classList.remove("fa-angle-down");
+        icon.classList.add("fa-angle-up");
+      }
+    });
+
+  </script>
+  
+</body>
+</html>

@@ -505,6 +505,25 @@ footer p{
     position: sticky;
     bottom: 0;
   }
+  .empty-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hidden{
+    display: none;
+  }
+  .toggle-summary{
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+  }
+  .toggle-summary i{
+    font-size: 18px;
+  }
+  .toggle-summary.open{
+    transform: rotate(180deg);
+  }
 
   .footer{
     display: flex;
@@ -522,5 +541,11 @@ footer p{
   .footer-title::after{
     width: 13%;
     margin-top: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  #toggle-summary-span {
+    display: none;
   }
 }

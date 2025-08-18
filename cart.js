@@ -157,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
 
-
     menuBtn.addEventListener('click', () => {
       navLinks.classList.toggle("active");
   
@@ -170,4 +169,18 @@ document.addEventListener('DOMContentLoaded', () => {
           menuIcon.classList.add("fa-bars");
       }
     });
+
+    const toggleSummarySpan = document.getElementById("toggle-summary-span");
+
+    toggleSummarySpan.addEventListener('click', () => {
+      toggleSummary();
+    });
+
+    function toggleSummary() {
+      const details = document.getElementById("summary-details");
+      const arrow = document.querySelector(".toggle-summary");
+
+      details.classList.toggle("hidden");
+      arrow.classList.toggle("open");
+    }
   });
