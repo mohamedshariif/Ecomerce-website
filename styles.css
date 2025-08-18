@@ -195,7 +195,7 @@ header{
 /* products */
 
 .product-sec{
-  height: 70vh;
+  height: auto;
   background-color: var(--secondary-color);
   padding: 2% 6%;
 }
@@ -261,11 +261,16 @@ header{
   display: flex;
   align-items: center;
   gap: 10px;
-  overflow: hidden;
+  overflow: auto;
   scroll-behavior: smooth;
   white-space: nowrap;
   width: 100%;
   padding: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE & Edge */
+}
+#items::-webkit-scrollbar {
+  display: none;
 }
 .item{
   width: 200px;
@@ -407,7 +412,7 @@ header{
   position: relative;
   background: var(--secondary-color);
   color: #000;
-  padding: 10px 0px;
+  padding: 10px 20px;
   padding-left: 40px;
   border-radius: 5px;
   width: 100%;
@@ -842,5 +847,12 @@ footer p{
   }
   .left-footer{
     width: 100%;
+  }
+  .center-footer, .right-footer, .follow-footer{
+    width: 100%;
+  }
+  .footer-title::after{
+    width: 13%;
+    margin-top: 8px;
   }
 }

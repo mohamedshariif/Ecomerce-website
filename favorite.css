@@ -450,14 +450,11 @@ footer p{
   .left-footer{
     width: 100%;
   }
+  .center-footer, .right-footer, .follow-footer{
+    width: 100%;
+  }
+  .footer-title::after{
+    width: 13%;
+    margin-top: 8px;
+  }
 }
-/* @media (min-width:320px)  { 
-  .fav-item{
-    background-color: red;
-  }
- } */
-/* @media screen and (max-width: 480px){
-  .fav-item{
-    width: 150px;
-  }
-} */
