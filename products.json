@@ -2,7 +2,7 @@
   {
     "id": 1, 
     "name": "Product 1",
-    "image": "watch-rolex.png",
+    "image": "images/watch-rolex.png",
     "price": 320,
     "rating": 4,
     "description": "Power Meets Elegance - Rolex Watch is Here for you !"
@@ -59,7 +59,7 @@
   {
     "id": 9, 
     "name": "Product 9",
-    "image": "watch-apple.png",
+    "image": "images/watch-apple.png",
     "price": 320,
     "rating": 4,
     "description": "Smartwatch with fitness tracking, notifications, and health monitoring."
@@ -67,7 +67,7 @@
   {
     "id": 10, 
     "name": "Product 10",
-    "image": "watch.png",
+    "image": "images/watch.png",
     "price": 320,
     "rating": 4,
     "description": "Classic diving watch with timeless design and outstanding durability."
