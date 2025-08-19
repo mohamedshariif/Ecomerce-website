@@ -372,21 +372,19 @@ header{
   background-color: #fff;
 }
 .add-to-cart{
-  width: 50px;
-  border: none;
+  width: 65px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 0px;
   background-color: transparent;
   cursor: pointer;
+  margin-left: 5px;
 }
 .cart .icon{
   color: var(--primary-color);
-  font-size: 18px;
-  transform: translate(-8px);
-  transition: transform 1s;
+  font-size: 20px;
+  transform: translate(0px);
 }
-/* .cart .icon:hover{
-  transform: translate(10px);
-}
- */
 
 .message-container {
   position: fixed;
@@ -414,6 +412,7 @@ header{
   color: #000;
   padding: 10px 0px;
   padding-left: 40px;
+  padding-right: 20px;
   border-radius: 5px;
   width: 100%;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
@@ -854,5 +853,8 @@ footer p{
   .footer-title::after{
     width: 13%;
     margin-top: 8px;
+  }
+  .success-message {
+    width: max-content;
   }
 }

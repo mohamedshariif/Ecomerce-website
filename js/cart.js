@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = menuBtn.querySelector("i");
 
     const cartSteps = document.getElementById('cart-steps');
-    const cartHeader = document.querySelector('.cart-header');
     const cartDetailsCon = document.querySelector('.cart-details-container');
     const cartItemsContainer = document.getElementById('cart-items');
     const subtotalEl = document.getElementById("subtotal");
@@ -41,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>`;
         cartSteps.style.display = "none";
-        cartHeader.style.display = "none";
         cartDetailsCon.style.display = "none";
+        totalItemsEl.style.display = "none";
       }
 
       let totalItems = 0;
@@ -64,13 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="cart-col product">
           <div class="img-name">
             <img src="${item.image}" alt="${item.name}">
+          </div>
+          <div class="name-price">
             <h4>${item.name}</h4>
+            <p>$${item.price.toFixed(2)}</p>
           </div>
         </div>
-
-        <div class="cart-col price">
-          <p>$${item.price.toFixed(2)}</p>
-        </div>
+        
         <div class="cart-col quantity">
           <div class="cart-controls">
               <button onclick="decreaseQuantity(${index})">
@@ -82,9 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
               </button>
           </div>
         </div>
-        <div class="cart-col subtotal">
-          $${(item.price * item.quantity).toFixed(2)}
-        </div>
           <div class="remove-btn" onclick="removeItem(${index})">
             <i class="fa-solid fa-trash" ></i>
           </div>
@@ -92,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cartItemsContainer.append(cartItem);
       });
-      {/* <button class="remove-btn" onclick="removeItem(${index})">Remove</button> */}
   
       totalItemsEl.textContent = `${totalItems} Items`;
       subtotalEl.textContent = `$${subtotal}`;
@@ -102,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
       //totalPriceEl.textContent = totalPrice.toFixed(2);
       localStorage.setItem('cart', JSON.stringify(cart));
     }
-
+        
   
     window.increaseQuantity = function(index) {
       cart[index].quantity += 1;

@@ -168,35 +168,31 @@ header{
   gap: 10px;
 }
 
-.cart-header{
-  font-weight: 500;
-  font-size: 16px;
-}
-.cart-item{
-  margin-top: 15px;
-}
-.cart-header,
 .cart-item {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 0.3fr;
+  grid-template-columns: 3fr 1fr 1fr;
   align-items: center;
-  padding: 10px;
-  gap: 30px;
+  padding: 15px 0px;
+  border-top: 0.5px solid #ebebeb;
+  border-bottom: 0.5px solid #ebebeb;
 }
-.cart-col.price,
-.cart-col.quantity,
-.cart-col.subtotal{
+.cart-col.product{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+.name-price{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .cart-item img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100px;
   object-fit: cover;
   border-radius: 5px;
-  border: 1px solid #f5f5f5;
+  border: 0.5px solid #f5f5f5;
 }
 .img-name{
   display: flex;
@@ -249,6 +245,9 @@ header{
   justify-content: space-between;
   margin-bottom: 15px;
 }
+.summary-info.one{
+  margin-bottom: 0;
+}
 .summary-info p{
   color: #777;
 }
@@ -266,6 +265,7 @@ header{
 .summary-info-total{
   border-top: 1px solid #ccc;
   padding: 15px 0;
+  margin-bottom: 0px
 }
 .summary-info-total p,
 .summary-info-total span{
@@ -412,6 +412,20 @@ footer p{
   color: #aaa;
   padding-bottom: 10px;
 }
+.your-cart-text{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.your-cart-text h1{
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.deco{
+  color: var(--accent-color);
+}
 
 
 /* mobile */
@@ -460,17 +474,7 @@ footer p{
     padding: 0px 3%;
   }
   .cart-steps{
-    gap: 20px;
-  }
-  .steps-container{
-    padding: 0;
-  }
-  .span-num{
-    width: 20px;
-    height: 20px;
-  }
-  .steps p{
-    font-size: 14px;
+    display: none;
   }
   /* cart Container */
   .cart-container-wrapper{
@@ -480,15 +484,14 @@ footer p{
   }
   .cart-items-container{
     margin-top: 10px;
-    padding: 0 10px;
+    padding: 10px;
     width: 100%;
   }
   .cart-header, .cart-col.price{
     display: none;
   }
   .cart-item{
-    display: flex;
-    padding: 0;
+    padding: 5px 0px;
     gap: 5px;
   }
   .cart-col.product{
@@ -504,6 +507,11 @@ footer p{
     width: 100%;
     position: sticky;
     bottom: 0;
+    padding-bottom: 20px;
+  }
+  .summary-info.one{
+    padding: 10px 0;
+    cursor: pointer;
   }
   .empty-container{
     display: flex;
@@ -546,6 +554,9 @@ footer p{
 
 @media (min-width: 768px) {
   #toggle-summary-span {
+    display: none;
+  }
+  .your-cart-text{
     display: none;
   }
 }

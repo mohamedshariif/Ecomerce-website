@@ -48,6 +48,11 @@
 
   <section class="cart-sec">
 
+    <div class="your-cart-text">
+      <h1>Your <span class="deco">Cart</span></h1>
+      <span id="total-items">0 Items</span>
+    </div>
+
   <div class="cart-steps" id="cart-steps">
     <div class="steps-container active">
       <div class="steps">
@@ -77,19 +82,12 @@
 
   <div class="cart-container-wrapper">
     <div class="cart-items-container">
-      <div class="cart-header">
-        <div class="cart-col product">Product Details</div>
-        <div class="cart-col price">Price</div>
-        <div class="cart-col quantity">Quantity</div>
-        <div class="cart-col subtotal">Subtotal</div>
-      </div>
       <div id="cart-items"></div>
     </div>
     <div class="cart-details-container">
-      <div class="summary-info">
-        <h3>Cart Details</h3>
-        <span id="total-items">0 Items</span>
-        <span class="toggle-summary" id="toggle-summary-span">
+      <div class="summary-info one" id="toggle-summary-span">
+        <h3>Cart <span class="deco">Totals</span></h3>
+        <span class="toggle-summary" >
           <i class="fa-solid fa-angle-up"></i>
         </span>
       </div>
