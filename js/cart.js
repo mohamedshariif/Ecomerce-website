@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   
       totalItemsEl.textContent = `${totalItems} Items`;
-      subtotalEl.textContent = `$${subtotal}`;
-      discountEl.textContent = `$-${discount}`;
-      shippingFeeEl.textContent = `$${shippingFee}`;
-      totalPriceEl.textContent = `$${totalPrice.toFixed(2)}`;
+      subtotalEl.textContent = `$ ${subtotal.toFixed(2)}`;
+      discountEl.textContent = `$ -${discount.toFixed(2)}`;
+      shippingFeeEl.textContent = `$ ${shippingFee.toFixed(2)}`;
+      totalPriceEl.textContent = `$ ${totalPrice.toFixed(2)}`;
       //totalPriceEl.textContent = totalPrice.toFixed(2);
       localStorage.setItem('cart', JSON.stringify(cart));
     }
