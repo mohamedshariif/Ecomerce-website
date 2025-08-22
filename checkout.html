@@ -76,7 +76,7 @@
     <div class="checkout-inputs-container">
       <div class="checkout-inputs">
         <div class="name-inputs">
-            <input type="text" placeholder="First name">
+            <input type="text" placeholder="First name" id="name">
             <input type="text" placeholder="Last name">
         </div>
         <div class="email-inputs">
@@ -105,7 +105,7 @@
           <i class="fa-solid fa-angle-up"></i>
         </span>
       </div>
-      <div class="summary hidden" id="summary-details">
+      <div class="summary" id="summary-details">
         <div class="summary-info">
           <p>Subtotal</p>
           <span id="subtotal">0</span>
@@ -129,22 +129,22 @@
         <h1><span class="deco">Payment</span> Method</h1>
         <div class="payment-div">
             <div class="one">
-                <input type="radio">
+                <input type="radio" name="payment">
                 <h1>stripe</h1>
             </div>
             <div class="two">
-                <input type="radio">
+                <input type="radio" name="payment">
                 <h1>PayPal</h1>
             </div>
             <div class="three">
-                <input type="radio">
+                <input type="radio" name="payment">
                 <h1>CASH ON DELIVERY</h1>
             </div>
         </div>
     </div>
 
     <div class="place-orderBtn">
-        <button>Place Order</button>
+        <button id="placeOrderBtn">Place Order</button>
     </div>
 
     </div>
@@ -152,6 +152,38 @@
   </div>
 
 </section>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="overlay hidden">
+  <div class="spinner"></div>
+  <p>Processing your order...</p>
+</div>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal hidden">
+  <div class="modal-content">
+    <div class="celebration-wrapper">
+      <div class="tick-order-div">
+        <i class="fa fa-check"></i>
+      </div>
+      <!-- Celebration Dots -->
+      <span class="dot small" style="--i:1;"></span>
+      <span class="dot medium" style="--i:2;"></span>
+      <span class="dot big" style="--i:3;"></span>
+      <span class="dot small" style="--i:4;"></span>
+      <span class="dot medium" style="--i:5;"></span>
+      <span class="dot big" style="--i:6;"></span>
+      <span class="dot small" style="--i:7;"></span>
+      <span class="dot medium" style="--i:8;"></span>
+      <span class="dot big" style="--i:9;"></span>
+      <span class="dot small" style="--i:10;"></span>
+    </div>
+    <h2>Order Placed Successfully</h2>
+    <p>Thank you for shopping with us. <br>Your order will be delivered soon.</p>
+    <button id="ordersBtn">View Orders</button>
+    <button id="closeModal">Continue Shopping</button>
+  </div>
+</div>
 
 
   <section class="real-footer">

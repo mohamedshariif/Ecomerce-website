@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.removeItem = function (index) {
     fav.splice(index, 1);
     localStorage.setItem("fav", JSON.stringify(fav));
-    showSuccessMessage("Removed from favorites");
+    showSuccessMessage("Item removed from favorite.");
     loadCart();
   };
 

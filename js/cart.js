@@ -96,6 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
       totalPriceEl.textContent = `$ ${totalPrice.toFixed(2)}`;
       //totalPriceEl.textContent = totalPrice.toFixed(2);
       localStorage.setItem('cart', JSON.stringify(cart));
+
+      //Save into localStorage
+      localStorage.setItem("subtotal", subtotal.toFixed(2));
+      localStorage.setItem("discount", discount.toFixed(2));
+      localStorage.setItem("shippingFee", shippingFee.toFixed(2));
+      localStorage.setItem("totalPrice", totalPrice.toFixed(2));
+
+      //console.log(localStorage.subtotal);
     }
         
   
@@ -117,7 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
     window.removeItem = function(index) {
       cart.splice(index, 1);
-      showSuccessMessage(`item removed from the cart`);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      showSuccessMessage("Item removed from the cart.");
       renderCart();
       updateCartCount();
     }
