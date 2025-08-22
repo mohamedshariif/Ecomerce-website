@@ -544,6 +544,7 @@ footer p{
   border-radius: 5px;
   color: var(--secondary-color);
   padding: 12px;
+  font-size: 16px;
   cursor: pointer;
 }
 .modal-content button:last-child{
